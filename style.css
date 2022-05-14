@@ -1,0 +1,99 @@
+body, h1, h2, h3, h4, h5, h6, p, span, a{
+    font-family: 'Open Sans', sans-serif;
+}
+.bg-custom{
+    color: #194376;
+}
+
+header{background-color: #194376;padding: 15px 0;position: relative;}
+header .menu{padding-bottom: 30px;}
+header .menu ul{}
+header .menu ul li{display: inline-block;}
+header .menu ul li a{text-decoration: none;color: #fff;padding: 0 15px;display: inline-block; transition: .4s;}
+header .menu ul li a:hover{
+    text-decoration: underline;
+}
+header .social-menu{padding-bottom: 30px;}
+header .social-menu ul{text-align: right;}
+header .social-menu ul li{display: inline-block;}
+header .social-menu ul li a{text-decoration: none;color: #fff;padding: 0 15px;display: inline-block;}
+
+.banner{
+    background: url(./img/carousel-1.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 250px 0;
+    position: relative;
+    z-index: 1;
+}
+.banner::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: -1;
+}
+
+.banner .b-text{}
+.banner .b-text p{font-size: 23px;font-weight: 600;}
+.banner .b-text h1{font-size: 70px;font-weight: 900;}
+.banner .b-btn{}
+.banner .b-btn a{color: #fff;background-color: #194376;padding: 15px 50px;text-decoration: none;font-size: 18px;display: inline-block; transition: .4s;}
+.banner .b-btn a:hover{
+    background-color: #122f52
+}
+.banner .b-content{position: relative;left: 0;bottom: -250px;}
+.banner .b-content .b-content-box{}
+.banner .b-content .b-content-box .b-icon{display: inline-block;position: absolute;left: 55px;top: 11px;font-size: 31px;}
+.banner .b-content .b-content-box .b-icon span{}
+.banner .b-content .b-content-box .b-item{display: inline-block;/*! text-align: right; */margin-left: 80px;}
+.banner .b-content .b-content-box .b-item h3{}
+.banner .b-content .b-content-box .b-item p{}
+.box{
+    
+    background-color: #46c6ce;
+    padding: 15px;
+    position: relative;
+}
+.box-2{
+    background-color: #194376;
+}
+
+.bottom-heading{background-color: #fff;padding: 15px;position: absolute;left: 173px;bottom: -45px;width: 81%;z-index: 99;}
+.bottom-heading .logo{}
+.bottom-heading .logo h2{font-weight: 900;font-size: 45px;margin-bottom: 0;}
+.bottom-heading .primary-menu{}
+.bottom-heading .primary-menu ul{margin-bottom: 0;}
+.bottom-heading .primary-menu ul li{display: inline-block; position: relative;}
+.bottom-heading .primary-menu ul li a{text-decoration: none;color: #807575;padding: 15px 15px;display: inline-block; transition: .3s;font-weight: 500;}
+.bottom-heading .primary-menu ul li span{}
+.bottom-heading .primary-menu ul li:hover > a{
+    color: #0dcaf0;
+}
+.bottom-heading .primary-menu ul li ul{
+    position: absolute;
+    left: 0;
+    top: 125%;
+    width: 140px;
+    background-color: #fff;
+    padding-left: 0;
+    transition: .4s;
+    transform: scaleY(0);
+}
+
+.bottom-heading .primary-menu ul li:hover ul{
+   transform: scaleY(1);
+}
+.bottom-heading .primary-menu ul li ul li{display: block;}
+.bottom-heading .primary-menu ul li ul li a{
+    display: block;
+    color: #000;
+}
+.bottom-heading .primary-menu ul li ul li:hover a{
+    background-color: #ddd;
+    color:  #000 !important;
+}
+.service:hover .hover{transform: rotateY(360deg); transition: 1s;}
+.buton:hover{color: #fff; transition: .4s;}
